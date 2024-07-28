@@ -1,6 +1,6 @@
 # Security Policy
 
-CZERO is committed to providing a secure platform for its users. We are continuously improving our security measures to protect the platform from potential threats. We encourage our users to report any security vulnerabilities they find in the platform.
+CZERTAINLY is committed to providing a secure platform for its users. We are continuously improving our security measures to protect the platform from potential threats. We encourage our users to report any security vulnerabilities they find in the platform.
 
 ## Reporting a Vulnerability
 
