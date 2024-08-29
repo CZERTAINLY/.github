@@ -10,6 +10,8 @@ CZERTAINLY is a open-source project for technology agnostic digital trust manage
 
 We encourage everyone to make contributions to CZERTAINLY platform. You can find more information in our contributing guidelines that are part of each repository.
 
+You can find instruction to setup your local environment here: [CZERTAINLY-Development-Environment](https://github.com/CZERTAINLY/CZERTAINLY-Development-Environment).
+
 ### 📖 Useful resources
 
 - Documentation for CZERTAINLY is available at [CZERTAINLY Docs](https://docs.czertainly.com/docs/).
