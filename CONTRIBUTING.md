@@ -11,8 +11,18 @@ We use [GitHub flow](https://docs.github.com/en/get-started/using-github/github-
 
 ## Issues
 
-All issues are managed in respective [GitHub](https://github.com/) repositories.
-We are using pre-defined issue templates and proper labelling to benefit from the automation process of assigning the issues to the right team and to generate the proper reports. Therefore each issue should be labelled with the appropriate labels.
+All issues are managed in the respective [GitHub](https://github.com/) repositories.
+We use pre-defined issue templates and proper labelling to benefit from the automation process of assigning issues to the right team and to generate the proper reports. Therefore each issue should be labelled with the appropriate labels.
+
+Opening a new issue in any repository of the organization offers the shared templates — **Bug**, **Feature**, **Task**, **Epic**, **Release**, **Documentation** and **QA** — which are maintained centrally in this repository under `.github/ISSUE_TEMPLATE/`. Each is a form: fill in the fields it asks for and the labels and routing are applied for you.
+
+### How to report a vulnerability
+
+**Do not report an undisclosed vulnerability in a public issue.** Report it privately: open the **Security** tab of the affected repository and choose **Report a vulnerability**, or email [ilm@omnitrust.com](mailto:ilm@omnitrust.com). The [security policy](SECURITY.md) describes what to include, when to expect a reply, and how disclosure is coordinated.
+
+The **Vulnerability** issue template is only for vulnerabilities that are already public, such as a CVE raised by dependency or container image scanning.
+
+Our development process includes automated vulnerability management: dependency checks, static analysis of the code, and penetration testing. We use the most common CVE databases and monitor CVEs through the [CVE Radar](https://www.cveradar.com/) tool.
 
 ### How to report a bug
 
@@ -47,6 +57,63 @@ If you are contributing to ILM for the first time, you can learn how to create a
 To help you get your feet wet and get you familiar with our contribution process, we have a list of good first issues that contain bugs that have a relatively limited scope. This is a great place to get started.
 
 If you decide to fix an issue, please be sure to check the comment thread in case somebody is already working on a fix. If nobody is working on it at the moment, please leave a comment stating that you intend to work on it so other people don't accidentally duplicate your effort.
+
+## Sign your commits
+
+Every commit must carry a `Signed-off-by` line certifying that you have the right to submit
+the work under the project's license. This is the
+[Developer Certificate of Origin](https://developercertificate.org/) (DCO) — a statement about
+the origin of the contribution, not a copyright assignment. Git adds the line for you with the
+`-s` flag:
+
+```
+git commit -s -m "Fix the certificate chain ordering"
+```
+
+The line uses your configured name and email, which must match the commit author:
+
+```
+Signed-off-by: Your Name <you@example.com>
+```
+
+Set them once if you have not already:
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+### If you forget
+
+Amend the most recent commit:
+
+```
+git commit --amend -s --no-edit
+```
+
+Sign off every commit on your branch at once, then force-push. Rebase onto the branch you
+opened the pull request against — `main` in most repositories, `develop` in the appliance and
+`ansible-role-*` repositories:
+
+```
+git rebase --signoff main
+git push --force-with-lease
+```
+
+Commits made through the GitHub web interface are signed off automatically, so accepting a
+review suggestion or using **Update branch** needs nothing from you.
+
+## Development process in steps
+
+The following steps should generally be followed for all development tasks:
+
+1. Clone or fork the repository and create your branch
+2. Add your code to the branch
+3. Prepare tests for your code (if needed)
+4. Make sure your code is written according to the conventions
+5. Ensure your code builds and the tests pass
+6. Do not commit files and folders unrelated to the code
+7. Sign off your commits (see above) and create a pull request
 
 ## Commit guidelines
 
