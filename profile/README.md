@@ -8,7 +8,7 @@
 
 ILM is an open-source platform for managing the full lifecycle of digital identities — certificates, cryptographic keys, secrets, and digital signatures. Built as a microservices architecture with an extensible connector framework, it integrates with existing PKI infrastructure, certificate authorities, and key management systems.
 
-Released under the [MIT License](https://github.com/OmniTrustILM/ilm/blob/main/LICENSE.md) with additional features available under subscription plans.
+Released under the [Apache License 2.0](https://github.com/OmniTrustILM/ilm/blob/main/LICENSE.md).
 
 ### Key Capabilities
 
@@ -50,4 +50,4 @@ We welcome contributions from everyone. To get started:
 
 ### License
 
-ILM is released under the [MIT License](https://github.com/OmniTrustILM/ilm/blob/main/LICENSE.md).
+ILM is released under the [Apache License 2.0](https://github.com/OmniTrustILM/ilm/blob/main/LICENSE.md).
