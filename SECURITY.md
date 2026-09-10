@@ -32,4 +32,4 @@ We ask that you give us time to release a fix before disclosing the issue public
 
 ## Our own process
 
-Our development process includes automated vulnerability management: dependency scanning, static analysis of the code, and penetration testing. Fixes for reported vulnerabilities are released through the same process, and published as GitHub security advisories.
+Our development process includes automated vulnerability management: dependency scanning, static analysis of the code, secret detection, and vulnerability scanning of published artifacts. Fixes for reported vulnerabilities are released through the same process, and published as GitHub security advisories.

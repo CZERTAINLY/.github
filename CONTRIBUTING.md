@@ -22,7 +22,7 @@ Opening a new issue in any repository of the organization offers the shared temp
 
 The **Vulnerability** issue template is only for vulnerabilities that are already public, such as a CVE raised by dependency or container image scanning.
 
-Our development process includes automated vulnerability management: dependency checks, static analysis of the code, and penetration testing. We use the most common CVE databases and monitor CVEs through the [CVE Radar](https://www.cveradar.com/) tool.
+Our development process includes automated vulnerability management: dependency checks, static analysis of the code, secret detection, and vulnerability scanning of published artifacts. We monitor the common CVE databases for issues affecting the platform and its dependencies.
 
 ### How to report a bug
 
