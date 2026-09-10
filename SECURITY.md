@@ -33,3 +33,20 @@ We ask that you give us time to release a fix before disclosing the issue public
 ## Our own process
 
 Our development process includes automated vulnerability management: dependency scanning, static analysis of the code, secret detection, and vulnerability scanning of published artifacts. Fixes for reported vulnerabilities are released through the same process, and published as GitHub security advisories.
+
+## Verifying what you deploy
+
+Released artifacts and container images are signed. The verification key is published as [`cosign.pub`](cosign.pub) in this repository.
+
+Verify a release's checksum file, then check the artifacts against it:
+
+```bash
+cosign verify-blob --key cosign.pub --signature checksums.txt.sig checksums.txt
+```
+
+Verify a container image digest:
+
+```bash
+cosign verify --key cosign.pub <image-reference>
+```
+
