@@ -179,7 +179,7 @@ jobs:
       # the gate enforces.
       - name: Resolve Trivy config
         id: trivy-config
-        uses: OmniTrustILM/.github/.github/actions/resolve-trivy-config@main
+        uses: OmniTrustILM/.github/.github/actions/resolve-trivy-config@0638f1be1040e31c4b147a0c77678d313cd46be4 # main
         with:
           allow-trivy-config-override: ${{ inputs.allow-trivy-config-override }}
           trivy-config-path: ${{ inputs.trivy-config }}
